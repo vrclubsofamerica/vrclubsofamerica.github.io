@@ -4,7 +4,7 @@ A modern, responsive website template designed for VR clubs in schools and educa
 
 ## 📱 Website Link
 
-[vrclubsofamerica.github.io](vrclubsofamerica.github.io)
+[vrclubsofamerica.github.io](https://vrclubsofamerica.github.io)
 
 ## 🎯 Features
 
