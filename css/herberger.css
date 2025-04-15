@@ -1,0 +1,112 @@
+.herberger-club {
+    padding: 30px 0;
+    background: white;
+    text-align: center;
+}
+
+.herberger-club h2 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.herberger-club h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.club-details {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.club-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.club-info {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.club-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.club-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.club-info li {
+    background: var(--background);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.club-info li:hover {
+    transform: translateY(-3px);
+}
+
+.club-info li::before {
+    content: '✓';
+    color: var(--primary);
+    font-weight: bold;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    .herberger-club {
+        padding: 40px 0;
+    }
+
+    .herberger-club h2 {
+        font-size: 2rem;
+    }
+
+    .club-info ul {
+        grid-template-columns: 1fr;
+    }
+
+    .club-info {
+        padding: 0 15px;
+    }
+} 

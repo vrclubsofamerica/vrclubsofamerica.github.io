@@ -1,0 +1,200 @@
+.hero {
+    background: linear-gradient(135deg, #2a2a72 0%, #009ffd 100%);
+     color: white;
+     padding: 100px 0;
+     position: relative;
+     overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/pattern.png') repeat;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.impact-stat {
+    margin-bottom: 30px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.stat-highlight {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.impact-stat p {
+    font-size: 2.5rem !important;
+    margin-bottom: 20px !important;
+    line-height: 1.4 !important;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    line-height: 1.6;
+    animation: fadeInUp 1.2s ease;
+    font-weight: bold;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    animation: fadeInUp 1.4s ease;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background: #fff;
+    color: var(--secondary);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .stat-highlight {
+        font-size: 2.5rem;
+    }
+
+    .impact-stat p {
+        font-size: 2rem !important;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.4rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.student-stories {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.story-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.story-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: var(--secondary);
+}
+
+.story-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-icon {
+    font-size: 2rem;
+}
+
+.author-info h3 {
+    margin: 0;
+    color: var(--secondary);
+}
+
+.author-info p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.join-movement {
+    padding: 80px 0;
+    text-align: center;
+    background: var(--primary);
+    color: white;
+}
+
+.join-movement h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.join-movement p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+} 

@@ -1,0 +1,426 @@
+.hero-about {
+    background: var(--primary);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.hero-about h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-about .lead {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.mission {
+    padding: 40px 0 20px;
+    background: #f8f9fa;
+}
+
+.mission-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--secondary);
+}
+
+.mission-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.mission-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.stat {
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+}
+
+.stat .number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.values {
+    padding: 20px 0 80px;
+}
+
+.values h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--secondary);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+
+.impact {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.impact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--secondary);
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.impact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.impact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+
+.impact-card p {
+    line-height: 1.6;
+}
+
+.join-cta {
+    padding: 80px 0;
+    text-align: center;
+    background: var(--primary);
+    color: white;
+}
+
+.join-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.join-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--secondary);
+}
+
+.team-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mentor-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mentor-card .member-photo {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.mentor-card h3 {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.mentor-card .role {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.mentor-card .credentials {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.mentor-card .credentials p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.mentor-card .member-quote {
+    font-style: italic;
+    color: var(--secondary);
+    font-size: 1.1rem;
+    margin-top: 20px;
+    position: relative;
+}
+
+.mentor-card .member-quote::before,
+.mentor-card .member-quote::after {
+    content: '"';
+    color: var(--primary);
+    font-size: 1.5em;
+}
+
+.student-leaders {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card .member-photo {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.team-card .role {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.team-card .project {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.mentorship {
+    padding: 80px 0;
+}
+
+.mentorship h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--secondary);
+}
+
+.mentorship-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mentorship-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.mentorship-points {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.mentorship-points li {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--secondary);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-about h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-about .lead {
+        font-size: 1.2rem;
+    }
+    
+    .mission-content h2,
+    .values h2,
+    .impact h2,
+    .join-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .stat .number {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentor-card {
+        padding: 30px;
+    }
+
+    .mentor-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .mentorship-points {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Social Links Section */
+.social-links {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.social-links h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.social-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #0056b3;
+} 
